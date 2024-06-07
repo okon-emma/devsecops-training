@@ -19,14 +19,6 @@ app.use(fileUpload());
 // Enable for Reverse proxy support
 // app.set('trust proxy', 1) 
 
-// Intialize Session
-app.use(session({
-  secret: 'keyboard cat',
-  resave: true,
-  saveUninitialized: true,
-  cookie: { secure: false }
-}))
-
 // Initialize Passport
 app.use(passport.initialize())
 app.use(passport.session())
